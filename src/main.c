@@ -1,4 +1,4 @@
-/******************************************************************************* 
+/*******************************************************************************
  * File:  main.c
  * Author: Will Flores waflores@ncsu.edu
  * Usage: Implements Project 3. For Device M30620FCP
@@ -17,7 +17,7 @@
  *              3.1, Homework 9 Functionanity
  * 
  * Created on March 26, 2012
- *******************************************************************************/
+ ******************************************************************************/
 
 #include "QSKDefines.h"
 #include "proto.h"
@@ -33,8 +33,7 @@
 
 /*******************************************************************************
  * Purpose: This function allows the user to press a button which gives us menus.
- * Passed: No arguments passed.
- * Locals: No locals variables used.
+ * Arguments: No arguments passed.
  * Returned: No values returned.
  * Author: Will Flores waflores@ncsu.edu
  *******************************************************************************/
@@ -77,7 +76,7 @@ void main(void) {
     
     while(FOREVER) {
         if (buttonPressed) {
-            // indicate that we've been pressing menu buttons
+            /* indicate that we've been pressing menu buttons */
             if (buttonCount != CLEAR_INDEX) ++buttonCount;
             switch (buttonPressed) {
                 case SW1_PRESSED:
@@ -103,7 +102,7 @@ void main(void) {
                     buttonCount = CLEAR_INDEX;
                     buttonPressed = CLEAR_INDEX;
                     break;
-            } // End Switch
+            } /* End Switch */
         }
         else {
             if (buttonCount == CLEAR_INDEX) {

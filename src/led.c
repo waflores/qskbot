@@ -22,11 +22,9 @@ uint A2DValuePot;
 uint A2DValueTherm;
 uchar A2DProcessed;
 
-
 /*******************************************************************************
 * Purpose: Makes the LEDs scan back and forth.
 * Passed: No arguments passed.
-* Locals: No locals variables used.
 * Returned: No values returned.
 * Author: Will Flores waflores@ncsu.edu
 *******************************************************************************/
